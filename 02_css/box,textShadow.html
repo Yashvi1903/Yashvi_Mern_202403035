@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        background-color: bisque;
+        height: 650px;
+        border: 2px solid black;
+        justify-content: center;
+        align-items: center;
+      }
+      .box {
+        --primary-color: brown;/*custom variable*/
+        background-color: aquamarine;
+        border: 1px solid var(--primary-color); /*using custom variable*/
+        width: 330px;
+        height: 330px;
+        margin: 5px;
+        padding: 5px;
+        /* |x-ofset| |y-ofset| color */
+        /* box-shadow: 15px 10px brown; */
+
+        /* |x-ofset| |y-ofset| |+blur-radiuse| colour */
+         box-shadow: 10px 15px 10px brown; 
+
+        /* |x-ofset| |y-ofset| |blur-radius| |spread-raidus| color */
+        /* box-shadow: 10px 15px 5px 50px brown; */
+
+        /*inner shadow*/
+        /* box-shadow: inset 10px 15px brown; */
+
+        /*multiple shadow*/
+        /* box-shadow: 10px 15px red,15px 8px yellow; */
+
+
+      }
+      #head1{
+        /* |x-ofset| |y-ofset| |blur-radius| color */
+        text-shadow: 5px 3px 2px palevioletred;
+
+        /* color |x-ofset| |y-ofset| blurradius */
+        text-shadow: yellow 2px 3px 1px;
+
+        /* color |x-ofset| |y-of-set| */
+        text-shadow: burlywood 2px 3px 1px;
+
+        /*|x-ofset| |y-ofset|*/
+        /* text-shadow: 2px 3px; it take by-default colour */
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <img src="pic3.png" height="100px" width="100px" />
+        <h2 id="head1">Welcome to codeHelp</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quibusdam
+          molestias delectus incidunt nam ducimus maxime culpa iusto commodi
+          similique fugit debitis repudiandae nobis tempore hic odit impedit,
+          obcaecati a!
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

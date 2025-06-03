@@ -1,0 +1,21 @@
+/* h1{},p{} is element selector matlab jetla bhi h1 hase html ma aai badha ma Aa style lagi jase */
+h1{
+    font-size: smaller;
+    text-align: center;
+}
+p{
+    background-color: deepskyblue;
+}
+/* #para1{} is ID selector  */
+#para1{
+    background-color: hotpink;
+}
+/* .para{} is class selector */
+.para{
+    color: white !important;
+    background-color: cadetblue;
+}
+/* p,article{} is group selector */
+p,article{
+    color: brown;
+}

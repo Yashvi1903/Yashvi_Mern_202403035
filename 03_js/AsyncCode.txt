@@ -1,0 +1,25 @@
+javaScript:-(default)
+-> synchonous
+-> Single threaded
+
+execution context:- execute one line of code at a time
+each operation waits for the last one to complete before executing
+
+Blocking Code Vs Non-Blocking code
+Blocking Code:- block the flow of program 
+                - read file sync
+Non-Blocking:- do not block execution
+                -read file Async
+
+
+fetch("something")-> task ne 2 part ma devide kare
+=> 1.web browser request handling
+=> 2.for reserving the space in memory(data)
+=> memory ma 2 array hoi onfulfield[] and onRejection[] bane private hoi apde change na kari sakvi
+=> network request resolve thay to onfulfield[] ma data jay
+
+
+
+===================================================================================================
+Acync in andar aaj await avi sake
+

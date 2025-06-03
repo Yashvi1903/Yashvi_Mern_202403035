@@ -1,0 +1,52 @@
+how code execute in javaScript?
+=>js is single threaded 
+=>javaScript Execution context
+=> 2 phase ma run karse code
+------------------------------------------------------
+=> 1.global Execution context 
+=> this variable ni andar muki devama ave
+=> browser => this value => window
+------------------------------------------------------
+=> 2.Function Execution context
+------------------------------------------------------
+=> 3.Eval Execution context
+------------------------------------------------------
+
+example programme:-              
+let val1 = 10                      
+let val2 = 5
+function addnum(num1,num2)
+{
+    let total = num1 + num2
+    return total
+}
+let result1 = addnum(val1,val2)
+let result2 = addnum(10,2)
+------------------------------------------------------
+
+***************phase of execution*********************
+
+1.memory creation phase 
+2.Execution phase
+
+------------------------------------------------------
+step of execution:-
+=====================first cycle==========================
+1.global execution => badha ne this ma nakhi daise
+2.memory creation phase => badha variables/function ne memory allocate karse
+ex:- val1->undefined
+val2->undefined
+addnum(function)=>defination
+result1->undefined
+result2->undefined
+
+//pela badha variables ne undefined declared kari de 
+
+=====================Second cycle===========================
+execution phalse:-
+val1->5
+val2->10
+result1->call addnum(function)=> this create new executional context 
+Aa new-executional context alag thi new-variable environment + execution thread create karse
+----------same cycle is repeate for new-executional context-----------------
+note:- global execution patya pachi variables value delete bhi thai jay 

@@ -1,0 +1,169 @@
+CSS-cascading style sheet
+----------------------------------------------------------------------------------------------
+CSS (Cascading Style Sheets) decides which style to apply based on four main factors:-
+1.Importance(!important):-
+it is a highest priority,overriding all other rules
+
+2.Specificity:-
+More specific selectors override less specific ones. Specificity is calculated based on:
+
+Inline styles (e.g., style="...") → highest specificity
+
+IDs (e.g., #id) → high specificity
+
+Classes, attributes, and pseudo-classes (e.g., .class, [type="text"], :hover)
+
+Elements and pseudo-elements (e.g., div, p, ::before) → lowest specificity
+
+3.Source Order:-
+If two rules have the same specificity, 
+the one that appears later in the CSS (or HTML if inline) is applied.
+
+4.Inheritance
+Some CSS properties (like color, font-family) are inherited from parent elements.
+ If no style is defined, the browser falls back on inherited or default values.
+-----------------------------------------------------------------------------------------
+inline CSS:- never use
+internal CSS:- written in head(!important give more important)
+external css:- make file and then link it with html
+
+inline CSS is given as more priority when both internal and inline are used.
+syntex:- h1(Selector){ color(property):green(value) }
+
+------------------------------------------------------------------------------------------
+selectors:- jeno use kari ne apde css add kari sakvi
+-element(tag) selector --> p{},h1{},article{}..etc
+-id selector --> using #idname
+-class selector --> using .classname
+-group selector
+------------------------------------------------------------------------------------------
+bg colour rgb,rgba,hexadecimal,hsl are some type of adding colour
+
+-------------------------------------------------------------------------------------------
+Box Model:- koi pan content browser ma eak Rectangular box na form maj display(rander) thay
+1 box model ma 4 parts hoi
+       -content
+       -padding - gap between content and border
+       -border
+       -margin - gab between two boxes
+
+--------------------------------------------------------------------------------------------
+universal selector:- for all tags and id/classes
+
+---------------------------------------------------------------------------------------------
+Box-Sizing:- The box-sizing property in CSS controls how the total size of an element is calculated 
+             specifically how width and height interact with padding and border.
+
+best practice:- make box-sizing: border-box;
+why border-box?
+-width and height include content + padding + border.
+-Useful for creating layouts that stay within fixed sizes.\
+-Simplifies layout calculations
+-Avoids unexpected overflows
+-Makes widths behave more intuitively
+------------------------------------------------------------------------------------------------------
+display property:-
+
+block element:- h1-h6,p,div,ul,ol,li,section,article,nav,header/footer,main,aside,form,table                
+new line
+widht-left to right
+respect custom width/height
+respect custom margin/padding
+inline element:- a,span,strong,em,b,i,u,img,nput,label
+same line
+width-according to content
+custom widht/height is not applied
+respect left/right margin only
+inline-block:-
+behave as inline but we can set custom width and custom height
+--------------------------------------------------------------------------------------------------------
+position property:-
+static:- by default
+- we can't able to mention top/left/bottom/right in static.
+relative:- current window na relative ma position provide thay
+         - gap maintained
+Absolute:- relative to  closest positioned ansector (best practice:- ansector-relative and child-absolute)
+         - gap not maintain 
+fixed:- remain at fixed position (through out the window)
+sticky:- remain fixed through out the container
+--------------------------------------------------------------------------------------------------------
+size unit:-
+absolute unit:- pixel(px,pt,cm,mm,in)
+relative unit:- relative to immidiate parent (%,em,rem,vh,vw)
+
+| Aspect          | Physical Pixel                       | Logical Pixel                        |
+| --------------- | ------------------------------------ | ------------------------------------ |
+| Defined by      | Screen hardware                      | Operating system / software          |
+| Size            | Fixed (depends on device)            | Abstract, device-independent         |
+|Affected by DPI* | Yes                                  | No                                   |
+| Purpose         | Actual display rendering             | UI layout consistency across devices |
+| Example Use     | Display resolution (1080p, 4K, etc.) | CSS `px`, Android `dp`, iOS `pt`     |
+(DPI-dot per inch)
+
+🔹 DPI vs. PPI
+-DPI is more common in printing.
+-PPI (Pixels Per Inch) is more accurate for digital screens.
+
+--------------------------------------------------------------------------------------------------
+How to make responsive disign?
+
+| # | Technique                           | Description                                                                              |
+| - | ----------------------------------- | ---------------------------------------------------------------------------------------- |
+| 1 |   Use Relative Units                | Use `em`, `rem`, `%`, `vw`, `vh` instead of fixed `px` for scalable layout               |
+| 2 |   Media Queries                     | Apply CSS rules based on screen sizes using `@media` queries                             |
+| 3 |   Flexbox / Grid Layouts            | Use `display: flex` or `display: grid` for flexible, adaptive layouts                    |
+| 4 |   Viewport Meta Tag                 | Add `<meta name="viewport" content="width=device-width, initial-scale=1.0">` in `<head>` |
+| 5 |   Responsive Images                 | Use `max-width: 100%; height: auto;` to scale images with their container                |
+| 6 |   Mobile-First Design               | Start designing for mobile screens first, then enhance for larger devices                |
+| 7 |   Test on Real Devices              | Use browser DevTools and emulator tools to test responsiveness                           |
+| 8 |   Use `auto-fit` / `minmax` in Grid | Makes grid layout adapt to content and screen size                                       |
+
+-------------------------------------------------------------------------------------------------------------------------------
+Flexbox:- layout method (display: flex to make flex container)
+       - by default flex direction is row
+=> justify content-main axis ke according chiso ko place karta hai 
+       -flex dir=row -> main axis = horizontal
+       -flex dir=col -> main axis = verticle
+=> Align-items - center axis na according vastu ne place kare(by default verticle)
+=>align-contents - maintain space betweent two flex items
+--------------------------------------------------------------------------------------------------------------------------------       
+Animation:- element ne eak style thi biji style ma convert karvu
+keyframe:- *from{}to{}* no use kari kiya thi kiya animation karavu aai batave
+animation-duration:- apde decide kari sakvi keta time sudhi animation joi
+animation-itration-count:- ketli vaar animation karvi che
+animation-delay:- kirye animation karavi che
+animation-direction:- give direction
+
+-------------------------------------------------------------------------------------------------------------------------------
+transition:- from Source to destination not a series of movement(child entity of animation)
+animation:- it have series of complex movement
+
+-------------------------------------------------------------------------------------------------------------------------------
+pseudo-class:-A pseudo-class in CSS is a keyword added to selectors that specifies a special state of the selected elements.
+It allows you to style elements based on information that isn’t part of the HTML document structure.
+
+| Pseudo-Class   | Description                                                       |
+| -------------- | ----------------------------------------------------------------- |
+| :hover         | Applies when the user hovers over an element.                     |
+| :active        | Applies when the element is being clicked.                        |
+| :focus         | Applies when the element is focused (e.g., a form input).         |
+| :visited       | Applies to links that have been visited.                          |
+| :first-child   | Selects the first child of its parent.                            |
+| :last-child    | Selects the last child of its parent.                             |
+| :nth-child(n)  | Selects the nth child of its parent.                              |
+| :not(selector) | Selects every element that does **not** match the given selector. |
+
+--------------------------------------------------------------------------------------------------------------------------------
+CSS Grid:- layout create karva mate grid use thay 
+inline grid VS block grid:-
+
+| Feature          | `grid` (block grid)       | `inline-grid` (inline grid)        |
+| ---------------- | ------------------------- | ---------------------------------- |
+| Display behavior | Block element             | Inline element                     |
+| Width            | Full width (by default)   | Shrinks to fit content             |
+| Flow in document | Starts on new line        | Flows with text                    |
+| Use case         | Layout sections, wrappers | Inline components with grid layout |
+
+grid-tamplet area:-
+
+

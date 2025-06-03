@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body style="background-color: #212121; color: #fff">
+    
+</body>
+<script>
+    //to create element using console
+    const div = document.createElement('h1')
+    console.log(div);
+    div.className = "main"
+    div.id = Math.round(Math.random()*10 + 1)
+    div.setAttribute("title","generated title")
+    div.style.backgroundColor = "green"
+    div.style.padding = "12px"
+    //rarely use this because it overrid the values
+    div.innerText = "yashvi Patel"
+    //Alternative(optimised)
+    const addtext = document.createTextNode("Chai aur code")
+    div.appendChild(addtext)
+
+
+    //To attach the div in the html
+    document.body.appendChild(div)
+</script>
+</html>

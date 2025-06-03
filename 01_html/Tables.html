@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <pre>
+tabel tag - starting tag
+thead - heading content
+tbody - actual content
+tfoot - summarisation content
+tr - table row 
+td - table data 
+th - heading
+row span(in td) - for expanding row
+col span(properties)- for expanding col
+
+</pre
+    >
+    <h1>This is my first table</h1>
+
+    <table border="1">
+      <thead>
+        <th>Student ID</th>
+        <th>Student Name</th>
+        <th>Gender</th>
+        <th>Age</th>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>1234</td>
+          <td colspan="3">Bill</td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td>john</td>
+          <td>male</td>
+          <td rowspan="3">17</td>
+        </tr>
+        <tr>
+          <td>1234</td>
+          <td>Bill</td>
+          <td>male</td>
+        </tr>
+        <tr>
+          <td>1234</td>
+          <td>Bill</td>
+          <td>male</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>second table</p>
+    <table border="1">
+      <tr>
+        <td>col1</td>
+        <td>col2</td>
+        <td>col3</td>
+      </tr>
+      <tr>
+        <td rowspan="2">Row 1 cell 1</td>
+        <td>row 1 cell 2</td>
+        <td>row 1 cell 3</td>
+      </tr>
+      <tr>
+        <td>row 2 cell 2</td>
+        <td>row 2 cell 3</td>
+      </tr>
+      <tr>
+        <td colspan="3">row 3 cell 3</td>
+      </tr>
+    </table>
+    <h2>third table</h2>
+
+    <table border="1">
+      <thead>
+        <th>No.</th>
+        <th>Full Name</th>
+        <th>Position</th>
+        <th>Salary</th>
+        <th>Type</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Bill Gates</td>
+          <td>Founder Microsoft</td>
+          <td>1000$</td>
+          <td rowspan="4">Company founder</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Steve jobs</td>
+          <td>Founde Apple</td>
+          <td>1200$</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Larry page</td>
+          <td>Founde Google</td>
+          <td>1100$</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Mark bhai</td>
+          <td>Founder FB</td>
+          <td>1300$</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">total expenses:</td>
+          <td>4600$</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <h2>Fourth table</h2>
+    <table border="1">
+      <thead>
+        <th>Country</th>
+        <th>State</th>
+        <th>City</th>
+        <th>Street</th>
+        <th>Male</th>
+        <th>Female</th>
+        <th>Others</th>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td rowspan="8">1</td>
+          <td rowspan="4">Kerala</td>
+          <td rowspan="2">Cochin</td>
+          <td>New Street</td>
+          <td>500</td>
+          <td>600</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <td>main street</td>
+          <td>300</td>
+          <td>288</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td rowspan="2">trivandrum</td>
+          <td>guru street</td>
+          <td>500</td>
+          <td>600</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <td>street</td>
+          <td>500</td>
+          <td>600</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <td rowspan="4">Maharaharastra</td>
+          <td rowspan="2">mumbai</td>
+          <td>krisha street</td>
+          <td>700</td>
+          <td>850</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>Main street</td>
+          <td>700</td>
+          <td>850</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td rowspan="2">surat</td>
+          <td>new street</td>
+          <td>700</td>
+          <td>850</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>Billa street</td>
+          <td>700</td>
+          <td>850</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td rowspan="2">2</td>
+          <td rowspan="2">Alaska</td>
+          <td rowspan="2">Aka center</td>
+          <td>new street</td>
+          <td>200</td>
+          <td>210</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>cross street</td>
+          <td>200</td>
+          <td>210</td>
+          <td>10</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>last table</h2>
+
+    <table border="1">
+        <thead>
+            <th rowspan="3"> Day</th>
+            <th colspan="3"> Seminar </th>
+        <tr>
+            <th colspan="2">Schedule</th>
+            <th rowspan="2">Topic</th>
+        </tr>
+        <tr>
+            <th>begin</th>
+            <th>End</th>
+        </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td rowspan="2">Monday </td>
+                <td rowspan="2">8:00 pm </td>
+                <td rowspan="2">5:00 pm </td>
+                <td>Introduction to xml </td>
+            </tr>
+            <tr>
+                 <td>Introduction to python </td>
+            </tr>
+            <tr>
+                 <td rowspan="3">Tuesday </td>
+                <td>8:00 pm </td>
+                <td>5:00 pm </td>
+                <td rowspan="2">Introduction to x-Path </td>
+            </tr>
+            <tr>
+                <td>11:00 pm </td>
+                <td>2:00 pm </td>
+            </tr>
+            <tr>
+                <td>2:00 pm </td>
+                <td>5:00 pm </td>
+                <td rowspan="2">XSL tramsformation </td>
+            </tr>
+        </tbody>
+    </table>
+  </body>
+</html>

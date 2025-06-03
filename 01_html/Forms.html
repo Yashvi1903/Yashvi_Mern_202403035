@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <pre>
+tags in form: 
+form - to create html form 
+input - many forms
+text input-type="text"
+radio buttons-type="radio" <b>Use same name</b>
+selection box-use select tag
+check box-type="checkbox"
+image button-type="image"
+file select-type="file"
+password field-type="password"
+date-type="date"/"time"(for time)
+range-type="range"
+counter-type="counter"
+feedback-type="feedback"
+
+lable - to create lable(screen readers) 
+value - pela thi input ni andar dekhase
+placeholder - to Add place holder not actual value(example purpose)
+the action attribute specifies where to send the form data when the user submits the form. 
+form elements :-
+
+input 
+label 
+select (Drop down menu)
+option 
+button
+text area(for multiline input)
+<b>field set</b> (to group multiple set of form elements) caption of field set using <b>lagend</b>
+
+<b>
+each lable have for="" attribute and fill this for attribute with input ID
+for radio button:- name same id different
+</b>
+<!-- <button type="button"></button> Aa redirect na kare just button aaj banave -->
+<!-- <button type="submit"> Aa normal button action ma je link nakhi hoi tiya redirect kare -->
+  <!-- <button type="reset"></button> Aa reset mare khali-->
+-checkbox ni ander default checked karva mate input tag ni andar checked lakhi devanu
+
+<b>Details and summary tags</b> details and summary tag use for give arrow jeni upar clic karta hidden ans khule summary arrow ni bajuma lakhva mate use thay
+</pre>
+    >
+    <h2>START FORM</h2>
+
+    <form>
+      <label for="email">Enter email ID:</label>
+      <input
+        type="text"
+        id="email"
+        placeholder="enter your mail here "
+      /><br /><br />
+      <label for="password">Enter password:</label>
+      <input type="text" id="password" />
+      <br />
+      <input type="submit" value="click here" />
+    </form>
+
+    <h2>NEW FORM</h2>
+    <form>
+      <fieldset>
+        <legend>Just try lagend</legend>
+        <label for="datepicker">choose date:</label>
+        <input type="date" id="datepicker" /><br />
+        <label for="selector1">Choose your dish:</label>
+        <select name="dishes" id="selector1">
+          <option value="maggi">maggi</option>
+          <option value="kurkure">kurkure</option>
+          <option value="chips">chips</option>
+        </select>
+        <br /><br />
+        <label for="dwarfs">multiple select </label><br>
+        <select multiple name="dwarfs" id="dwarfs">
+          <option>Grumpy</option>
+          <option>Happy</option>
+          <option>Sleepy</option>
+          <option>Bashful</option>
+          <option>Sneezy</option>
+          <option>Dopey</option>
+          <option>Doc</option>
+        </select>
+        <br /><br />
+        <button>Mai hu button</button>
+        <br /><br />
+        <textarea
+          name="textarea1"
+          id="textarea1"
+          placeholder="Enter text"
+          cols="20"
+          rows="15"
+        ></textarea>
+      </fieldset>
+    </form>
+
+    <h2>ANOTHER FORM</h2>
+    <form>
+      <label for="textfield1">Text field: </label>
+      <input type="text" name="textfield1" id="textfield1">
+      <br><br>
+
+      <label for="button1">Button</label>
+      <input type="submit" name="button1" id="button1" value="Subscribe">
+      <br><br>
+      <label for="rbutton">male: </label>
+      <input type="radio" name="radio" id="rbutton">
+      <label for="radio2">female: </label>
+      <input type="radio" name="radio" id="radio2">
+      <label for="radio">others: </label>
+      <input type="radio" name="radio" id="radio">
+      <br>
+      <br>
+<label for="checkbox1">English: </label>
+      <input type="checkbox" name="checkbox1" id="checkbox1">
+      <label for="checkbox2">hindi: </label>
+      <input type="checkbox" name="checkbox2" id="checkbox2">
+      <br>
+      <br>
+      <label for="fileselect1">Uplode </label>
+      <input type="file" name="fileselect1" id="fileselect1">
+      <br>
+      <br>
+
+      <input type="image" name="image1" id="image1" alt="Click here" src="button.png" width="50px" height="50px">
+      <br>
+      <br>
+      <label for="password1">enter password</label>
+      <input type="password" name="password1" id="password1">
+      
+
+
+    </form>
+  </body>
+</html>

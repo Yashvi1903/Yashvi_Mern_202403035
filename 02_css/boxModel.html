@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+        /* universal selector/best practice */
+        *{
+            padding: 0;
+            margin: 0;
+        }
+      h1 {
+        background-color: aquamarine;
+        /* border-style: solid;
+        border-width: 2px;
+        border-color: brown; */
+
+        /* short notation */
+        border: solid brown 2px;
+        border-radius: 10px; /*rounded corners */
+        border-top: solid palevioletred 5px; /*top border only*/
+        border-bottom: solid slateblue 5px; /*bottom border only*/
+        width: 400px;
+      }
+      /* span tag is inline element so, it only take up as much space as their content requires */
+      /* CSS properties like width, height, margin-top, margin-bottom are ignored. to use it change display property */
+      span{
+        background-color: aquamarine;
+        border: solid black 3px;
+        border-radius: 5px;
+        width: 400px;
+        height: 100px;
+        margin-left: 20px; /*left/right margin of inline elements are called inlinemargin*/
+        margin-right: 20px;
+        }
+      .firstpara{
+        background-color: blanchedalmond;
+        border: solid black 3px;
+        border-radius: 5px;
+        width: 400px;
+        height: 200px;
+        padding: 30px; /*content ane border vache ni space ne padding kevay*/
+        margin: 100px; /*2 box in vache na gap ne margin kevay*/
+      }
+      .secondpara{
+        background-color: cadetblue;
+        border: solid black 3px;
+        border-radius: 5px;
+        width: 400px;
+        height: 200px;
+        /* padding-left: 30px;
+        padding-top: 30px;
+        padding-right: 30px; */
+
+        /* short notation */
+        /* padding: 35px 35px 0px 35px; */
+
+        /* another way  */
+        padding: 40px 20px; /*40-top/bottom and 20-right/left*/
+        margin: auto; /*to center it in the container*/
+      }
+      .thirdpara{
+        background-color: coral;
+        border: solid black 3px;
+        border-radius: 5px;
+        width: 400px;
+        height: 200px;
+        margin-top: 50px;
+        margin-left: 100px;
+      }
+    </style>
+  </head>
+  <body>
+     <h1>welcome to yashvi's wrold</h1>
+
+    <span>welcome to billu's world</span>
+    <p class="firstpara">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat nostrum
+      consectetur excepturi? Autem nihil delectus culpa id provident illum iusto
+      fuga? Dolorem delectus saepe, neque sed explicabo voluptatibus possimus
+      earum.
+    </p>
+
+    <p class="secondpara">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit iusto
+      quo expedita maiores optio cupiditate fugiat eius, qui perspiciatis, omnis
+      dolores doloremque similique at corporis laboriosam odio ullam in modi
+      deleniti veniam. Alias error quae dignissimos odit perspiciatis. Harum
+      ducimus praesentium itaque nobis doloribus beatae soluta ex maxime! Non
+      beatae ea architecto, fugiat eaque aliquam. Cumque perspiciatis magnam
+      distinctio explicabo.
+    </p>
+
+    <p class="thirdpara">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea et
+      consectetur obcaecati mollitia quidem esse magni consequuntur culpa
+      laboriosam perferendis, debitis voluptatum reiciendis quod nihil eius quas
+      illum enim architecto.
+    </p>
+
+    
+  </body>
+</html>

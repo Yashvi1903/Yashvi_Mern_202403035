@@ -1,0 +1,25 @@
+DOM: Document object modle
+koi bhi method ne eak const variable ma nakhi devi to direct access thai jay.
+
+
+-------------------------------------------------------------------------------------
+
+to access inner text:-
+.textContent
+.innerHtml
+.innerText
+
+// textContent => hidden values ne bhi ape
+// innerText => hidden values na ape
+// inerrHtml => inner html code akho api de
+
+--------------------------------------------------------------------------
+.quaryselector("Any html tag")=> select and give first given html tag 
+.quaryselectorAll("any html tag")=>select and give all value of given tag
+
+.quaryselectorAll eak 'NodeList' select kari ne ape
+Array.from() => used to convert html list into array list.
+
+
+---------------------------------------------------------------------------
+.style => css style ni jem style karva ma use thay
